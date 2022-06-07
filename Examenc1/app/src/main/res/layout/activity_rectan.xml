@@ -41,29 +41,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
+            android:paddingTop="25dp"
             android:layout_gravity="center"
             android:text="Que desea calcular ">
         </TextView>
 
-        <RadioButton
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rdArea"
-            android:text="Area">
-        </RadioButton>
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdArea"
+                android:text="Area">
+            </RadioButton>
 
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rdPerimetro"
-            android:text="Perimetro">
-        </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdPerimetro"
+                android:text="Perimetro">
+            </RadioButton>
+        </RadioGroup>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
-            android:id="@+id/lblResultado">
+            android:id="@+id/lblArea">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:id="@+id/lblPerimetro">
         </TextView>
 
         <Button

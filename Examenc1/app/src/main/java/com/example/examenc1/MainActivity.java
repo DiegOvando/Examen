@@ -54,30 +54,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     //Funciones
-                    String txtName = txtNombre.getText().toString();
-
-                    //float txtBa = Float.parseFloat(txtBase.getText().toString());
-                    //float txtAl = Float.parseFloat(txtAltura.getText().toString());
-
                     Intent intent = new Intent(MainActivity.this,rectan.class);
                     //intent.putExtra("usuario", txtUsuario.getText().toString());
                     Bundle bundle = new Bundle();
-                    bundle.putSerializable("nombre", txtName);
+                    bundle.putSerializable("nombre", txtNombre.getText().toString());
                     bundle.putSerializable("base", txtBase.getText().toString());
                     bundle.putSerializable("altura", txtAltura.getText().toString());
                     intent.putExtras(bundle);
                     startActivity(intent);
-//                    float txtBas = Float.parseFloat(txtBase.getText().toString());
-//                    if (txtBase.getText().toString().matches(rectangulo.getBase()) && txtAltura.getText().toString().matches(user.getContraseña())){
-//                        Toast.makeText(MainActivity.this, "Correcto", Toast.LENGTH_SHORT).show();
-//                        //Cargando la new Activity "LstActivity"
-//                        Intent intent = new Intent(MainActivity.this,activity_rec.class);
-//                        //intent.putExtra("usuario", txtUsuario.getText().toString());
-//                        Bundle bundle = new Bundle();
-//                        bundle.putSerializable("usuario", user);
-//                        intent.putExtras(bundle);
-//                        startActivity(intent);
-//                    }
                 }
             }
         });
